@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> My First HTML Page </title>
+        <link rel="stylesheet" href="ex2.css" />
+
+        <script>
+           function fun1 () {
+            var a = document.getElementById("un").value;
+            var b = document.getElementById("pw").value;
+            alert(a + " --- " + b);
+            document.getElementById("new").innerHTML = "Button Clicked";
+           } 
+        </script>
+    </head>
+    <body>
+        <center>
+            <div id = "div1">
+                <p style="text-shadow: 1px 2px 4px yellow, -2px -2px 4px rgb(21, 102, 10);"><b><i><u> Login Box </u></i></b></p>
+                <br/>
+                <br/>
+                username: <input type="text" id="un" />
+                <br/>
+                password: <input type="password" id="pw" />
+                <br/>
+                <br/>
+                <button onclick="fun1()"> Login </button>
+                <div id = "new">  </div>
+            </center>
+        </div>
+    </body>
+</html>

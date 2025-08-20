@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form Validation</title>
+  <link rel="stylesheet" href="sc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registeration Form</h1>
+    <form id="registerForm" novalidate>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required minlength="4">
+      <span class="error" id="usernameError"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+      <span class="error" id="emailError"></span>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required minlength="8">
+      <span class="error" id="passwordError"></span>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" required>
+      <span class="error" id="confirmError"></span>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="successMsg"></p>
+  </div>
+
+  <script src="sc.js"></script>
+</body>
+</html>
